@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C97B344B-FF40-42E5-A159-8968F1EB9C5A}</ProjectGuid>
+    <Keyword>AtlProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.33801.447</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)atl_msr_so.tlb</TypeLibraryName>
+      <HeaderFileName>atl_msr_so.h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>atl_msr_so_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>atl_msr_so_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Opos_Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <RegisterOutput>true</RegisterOutput>
+      <ModuleDefinitionFile>.\atl_msr_so.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)atl_msr_so.tlb</TypeLibraryName>
+      <HeaderFileName>atl_msr_so.h</HeaderFileName>
+      <DllDataFileName />
+      <InterfaceIdentifierFileName>atl_msr_so_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>atl_msr_so_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Opos_Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <RegisterOutput>true</RegisterOutput>
+      <ModuleDefinitionFile>.\atl_msr_so.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="atl_msr_so.cpp" />
+    <ClCompile Include="atl_msr_so_i.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="dlldatax.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="LogFile.cpp" />
+    <ClCompile Include="ProvDialog.cpp" />
+    <ClCompile Include="RegistryData.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TestDialog.cpp" />
+    <ClCompile Include="VirtMsrSo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Opos_Include\Opos.hi" />
+    <None Include="..\Opos_Include\OposBacc.hi" />
+    <None Include="..\Opos_Include\OposBb.hi" />
+    <None Include="..\Opos_Include\OposBdsp.hi" />
+    <None Include="..\Opos_Include\OposBelt.hi" />
+    <None Include="..\Opos_Include\OposBio.hi" />
+    <None Include="..\Opos_Include\OposCacc.hi" />
+    <None Include="..\Opos_Include\OposCash.hi" />
+    <None Include="..\Opos_Include\OposCat.hi" />
+    <None Include="..\Opos_Include\OposChan.hi" />
+    <None Include="..\Opos_Include\OposChk.hi" />
+    <None Include="..\Opos_Include\OposCoin.hi" />
+    <None Include="..\Opos_Include\OposDisp.hi" />
+    <None Include="..\Opos_Include\OposEj.hi" />
+    <None Include="..\Opos_Include\OposEvrw.hi" />
+    <None Include="..\Opos_Include\OposFptr.hi" />
+    <None Include="..\Opos_Include\OposGate.hi" />
+    <None Include="..\Opos_Include\OposImg.hi" />
+    <None Include="..\Opos_Include\OposItem.hi" />
+    <None Include="..\Opos_Include\OposKbd.hi" />
+    <None Include="..\Opos_Include\OposLgt.hi" />
+    <None Include="..\Opos_Include\OposLock.hi" />
+    <None Include="..\Opos_Include\OposMicr.hi" />
+    <None Include="..\Opos_Include\OposMotion.hi" />
+    <None Include="..\Opos_Include\OposMsr.hi" />
+    <None Include="..\Opos_Include\OposPcrw.hi" />
+    <None Include="..\Opos_Include\OposPpad.hi" />
+    <None Include="..\Opos_Include\OposPtr.hi" />
+    <None Include="..\Opos_Include\OposPwr.hi" />
+    <None Include="..\Opos_Include\OposRfid.hi" />
+    <None Include="..\Opos_Include\OposRod.hi" />
+    <None Include="..\Opos_Include\OposScal.hi" />
+    <None Include="..\Opos_Include\OposScan.hi" />
+    <None Include="..\Opos_Include\OposScrw.hi" />
+    <None Include="..\Opos_Include\OposSig.hi" />
+    <None Include="..\Opos_Include\OposTone.hi" />
+    <None Include="..\Opos_Include\OposTot.hi" />
+    <None Include="atl_msr_so.def" />
+    <None Include="atl_msr_so.rgs" />
+    <None Include="VirtMsrSo.rgs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="atl_msr_so.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Opos_Include\Opos.h" />
+    <ClInclude Include="..\Opos_Include\OposBacc.h" />
+    <ClInclude Include="..\Opos_Include\OposBb.h" />
+    <ClInclude Include="..\Opos_Include\OposBdsp.h" />
+    <ClInclude Include="..\Opos_Include\OposBelt.h" />
+    <ClInclude Include="..\Opos_Include\OposBio.h" />
+    <ClInclude Include="..\Opos_Include\OposCacc.h" />
+    <ClInclude Include="..\Opos_Include\OposCash.h" />
+    <ClInclude Include="..\Opos_Include\OposCat.h" />
+    <ClInclude Include="..\Opos_Include\OposChan.h" />
+    <ClInclude Include="..\Opos_Include\OposChk.h" />
+    <ClInclude Include="..\Opos_Include\OposCoin.h" />
+    <ClInclude Include="..\Opos_Include\OposDisp.h" />
+    <ClInclude Include="..\Opos_Include\OposEj.h" />
+    <ClInclude Include="..\Opos_Include\OposEvrw.h" />
+    <ClInclude Include="..\Opos_Include\OposFptr.h" />
+    <ClInclude Include="..\Opos_Include\OposGate.h" />
+    <ClInclude Include="..\Opos_Include\OposImg.h" />
+    <ClInclude Include="..\Opos_Include\OposItem.h" />
+    <ClInclude Include="..\Opos_Include\OposKbd.h" />
+    <ClInclude Include="..\Opos_Include\OposLgt.h" />
+    <ClInclude Include="..\Opos_Include\OposLock.h" />
+    <ClInclude Include="..\Opos_Include\OposMicr.h" />
+    <ClInclude Include="..\Opos_Include\OposMotion.h" />
+    <ClInclude Include="..\Opos_Include\OposMsr.h" />
+    <ClInclude Include="..\Opos_Include\OposPcrw.h" />
+    <ClInclude Include="..\Opos_Include\OposPpad.h" />
+    <ClInclude Include="..\Opos_Include\OposPtr.h" />
+    <ClInclude Include="..\Opos_Include\OposPwr.h" />
+    <ClInclude Include="..\Opos_Include\OposRfid.h" />
+    <ClInclude Include="..\Opos_Include\OposRod.h" />
+    <ClInclude Include="..\Opos_Include\OposScal.h" />
+    <ClInclude Include="..\Opos_Include\OposScan.h" />
+    <ClInclude Include="..\Opos_Include\OposScrw.h" />
+    <ClInclude Include="..\Opos_Include\OposSig.h" />
+    <ClInclude Include="..\Opos_Include\OposStat.h" />
+    <ClInclude Include="..\Opos_Include\OposTone.h" />
+    <ClInclude Include="..\Opos_Include\OposTot.h" />
+    <ClInclude Include="atl_msr_so.h" />
+    <ClInclude Include="dlldatax.h" />
+    <ClInclude Include="LogFile.h" />
+    <ClInclude Include="ProvDialog.h" />
+    <ClInclude Include="RegistryData.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TestDialog.h" />
+    <ClInclude Include="VirtMsrSo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="atl_msr_so.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="atl_msr_so.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

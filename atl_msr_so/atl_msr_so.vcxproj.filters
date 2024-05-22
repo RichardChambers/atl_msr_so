@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{3a7cb0a2-87c5-44c3-a417-96032867a5bb}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="OposIncludes">
+      <UniqueIdentifier>{73d71fd3-ee9c-47ea-97ef-5b4f74800211}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="atl_msr_so.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlldatax.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProvDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegistryData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtMsrSo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atl_msr_so_i.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="atl_msr_so.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="atl_msr_so.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="VirtMsrSo.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Opos_Include\Opos.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposBacc.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposBb.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposBdsp.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposBelt.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposBio.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposCacc.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposCash.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposCat.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposChan.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposChk.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposCoin.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposDisp.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposEj.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposEvrw.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposFptr.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposGate.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposImg.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposItem.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposKbd.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposLgt.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposLock.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposMicr.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposMotion.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposMsr.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposPcrw.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposPpad.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposPtr.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposPwr.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposRfid.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposRod.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposScal.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposScan.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposScrw.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposSig.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposTone.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+    <None Include="..\Opos_Include\OposTot.hi">
+      <Filter>OposIncludes</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="atl_msr_so.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dlldatax.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProvDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegistryData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtMsrSo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atl_msr_so.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\Opos.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposBacc.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposBb.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposBdsp.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposBelt.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposBio.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposCacc.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposCash.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposCat.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposChan.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposChk.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposCoin.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposDisp.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposEj.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposEvrw.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposFptr.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposGate.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposImg.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposItem.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposKbd.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposLgt.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposLock.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposMicr.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposMotion.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposMsr.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposPcrw.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposPpad.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposPtr.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposPwr.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposRfid.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposRod.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposScal.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposScan.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposScrw.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposSig.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposStat.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposTone.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Opos_Include\OposTot.h">
+      <Filter>OposIncludes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="atl_msr_so.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

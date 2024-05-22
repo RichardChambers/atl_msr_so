@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include <OposMsr.hi>
+#include "OposMsr.hi"
 
 class CRegistryData
 {

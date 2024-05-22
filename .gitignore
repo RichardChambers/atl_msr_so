@@ -66,6 +66,7 @@ StyleCopReport.xml
 
 # Files built by Visual Studio
 *_i.c
+*_i.h
 *_p.c
 *_h.h
 *.ilk
@@ -348,3 +349,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/Opos_Include
+/atl_msr_so/atl_msr_so.h
